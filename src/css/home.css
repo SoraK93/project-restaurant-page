@@ -1,0 +1,48 @@
+/* Home */
+.home > div {
+  margin: 5em;
+}
+
+.shop-description {
+  background-color: var(--description-bg);
+  box-shadow: 0 4px 6px 1px var(--description-shadow);
+  padding: 4em;
+}
+.shop-description p {
+  font-size: 3rem;
+}
+
+.dish-description {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dish-description div:nth-child(1) h1 {
+  font-size: 5rem;
+  padding: 0.5em;
+}
+.dish-description div:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 50px 50px 0;
+}
+
+.shop-description,
+.dish-description {
+  background-color: var(--description-bg);
+  box-shadow: 0 4px 6px 1px var(--description-shadow);
+  border-radius: 50px;
+}
+.dish-description div:nth-child(1),
+.dish-description div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+}
+.shop-description div:nth-child(1) p,
+.dish-description div:nth-child(1) p {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: justify;
+  padding: 0.5em;
+}

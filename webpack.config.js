@@ -8,7 +8,7 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
-    watchFiles: ["./src/template.html"],
+    watchFiles: ["./src/*.html", "./src/css/*.css"],
   },
   plugins: [
     new HTMLWebpackPlugin({
@@ -26,7 +26,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(jpg|jpeg|webp)$/i,
         type: "asset/resource",
       },
     ],
