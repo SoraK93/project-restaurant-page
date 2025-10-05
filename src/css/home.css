@@ -1,3 +1,8 @@
+:root {
+  --description-bg: rgb(255, 255, 255);
+  --description-shadow: rgb(128, 128, 128);
+}
+
 /* Home */
 .home > div {
   margin: 5em 15em;

@@ -1,20 +1,55 @@
-/* Remove later */
-.item-img img {
-    width: 100px;
+:root {
+  --menu-bg: rgb(255, 255, 255);
+  --menu-shadow: rgb(128, 128, 128);
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 15em;
 }
 
 .menu-intro {
-    text-align: center;
-    margin-bottom: 4em;
+  text-align: center;
+  margin-bottom: 4em;
 }
 .menu-intro h2 {
-    font-size: 5rem;
-    margin: 1em 0;
+  font-size: 5rem;
+  margin: 1em 0 0.5em 0;
+}
+.menu-intro p {
+  font-size: 3rem;
 }
 
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--menu-bg);
+  border-radius: 50px;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 6px 1px var(--menu-shadow);
+}
+.item-details {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.item-details h3 {
+  font-size: 4em;
+}
+.item-details p {
+  font-size: 3em;
+}
+.item-details p:nth-of-type(1) {
+  text-align: justify;
+  hyphens: auto;
+}
+.item-details p:nth-of-type(2) {
+  align-self: flex-end;
+}
+.item-img img {
+  width: 100%;
+  border-radius: 0 50px 50px 0;
+}

@@ -62,7 +62,7 @@ menuList.forEach((item) => {
   itemDetails.classList.add("item-details");
   createItem(item.name, "h3", itemDetails);
   createItem(item.description, "p", itemDetails);
-  createItem(item.price, "p", itemDetails);
+  createItem(`¥${item.price}`, "p", itemDetails);
 
   let itemImg = document.createElement("div");
   itemImg.classList.add("item-img");

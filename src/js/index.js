@@ -24,7 +24,7 @@ document.querySelector("nav").addEventListener("click", (e) => {
       break;
     case "Contact Us":
       content.innerHTML = "";
-      content.appendChild(contact);
+    //   content.appendChild(contact);
       break;
   }
 });
