@@ -1,0 +1,58 @@
+:root {
+  --contact-bg: rgb(255, 255, 255);
+  --contact-shadow: rgb(128, 128, 128);
+}
+
+.contact {
+  height: auto;
+  background-color: var(--contact-bg);
+  box-shadow: 0 6px 6px 1px var(--contact-shadow);
+  border-radius: 50px;
+  margin: 3em 45em;
+  padding-bottom: 3em;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(219, 97, 26, 0.8);
+  border-radius: 50px 50px 0 0;
+}
+.address h2 {
+  padding: 1em 0;
+  font-size: 2rem;
+}
+.address p {
+  padding: 1em 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .contact-info {
+  padding: 3em 5em 3em 5em;
+  margin: 1em 1em;
+  box-shadow: 0 6px 6px 1px var(--contact-shadow);
+  border-radius: 50px;
+}
+.contact-info {
+  background-color: rgb(248, 233, 193);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: fit-content;
+}
+.contact-info p {
+  font-size: 2rem;
+}
+.contact-info p:nth-of-type(1) {
+  font-weight: 700;
+  text-decoration: underline;
+}

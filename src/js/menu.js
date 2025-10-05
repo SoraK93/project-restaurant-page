@@ -3,6 +3,7 @@ import sapporoMiso from "../assets/sapporo-special-miso-ramen.webp";
 import tokyoShoyu from "../assets/tokyo-shoyu-ramen.jpg";
 import tonkotsuRamen from "../assets/tonkotsu-ramen-bowl-ramen.jpeg";
 import nikuUdon from "../assets/niku-udon.jpg";
+import { createItem } from "./utilities";
 
 const menuList = [
   {
@@ -31,15 +32,11 @@ const menuList = [
   },
 ];
 
-function createItem(item, element, pelement) {
-  let card = document.createElement(element);
-  card.textContent = item;
-  pelement.appendChild(card);
-}
-
+// menu
 const menu = document.createElement("div");
 menu.classList.add("menu");
 
+// menu info
 const menuHeadingContainer = document.createElement("div");
 menuHeadingContainer.classList.add("menu-intro");
 
@@ -54,6 +51,7 @@ menuHeadingContainer.appendChild(menuPara);
 
 menu.appendChild(menuHeadingContainer);
 
+// menu items
 let itemContainer = document.createElement("div");
 itemContainer.classList.add("item-container");
 

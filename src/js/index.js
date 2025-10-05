@@ -5,7 +5,7 @@ import menu from "./menu";
 import contact from "./contact";
 
 const content = document.querySelector("#content");
-content.appendChild(menu);
+content.appendChild(home);
 
 document.querySelector("nav").addEventListener("click", (e) => {
   e.stopPropagation();
@@ -24,7 +24,7 @@ document.querySelector("nav").addEventListener("click", (e) => {
       break;
     case "Contact Us":
       content.innerHTML = "";
-    //   content.appendChild(contact);
+      content.appendChild(contact);
       break;
   }
 });
