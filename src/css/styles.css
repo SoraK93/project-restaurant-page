@@ -9,6 +9,10 @@
   --header-button-shadow-solid: rgba(255, 196, 0, 0.5);
   --description-bg: rgb(255, 255, 255);
   --description-shadow: rgb(128, 128, 128);
+  --footer-button-bg: rgba(219, 97, 26, 0.8);
+  --footer-text-color: rgb(255, 255, 255);
+  --footer-text-color-hover: rgb(233, 204, 39);
+  --footer-text-color-visited: rgb(187, 187, 187);
   --font: "Poiret One";
 }
 
@@ -70,6 +74,7 @@ body {
   transform: scale(1);
   font-family: var(--font);
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .nav-menu button:hover {
@@ -84,6 +89,31 @@ body {
   transition: transform 0.4 ease-out;
 }
 
-
-
 /* Footer */
+footer {
+  background-color: var(--footer-button-bg);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p,
+footer a {
+  font-size: 3rem;
+  font-weight: 700;
+}
+footer a {
+  text-decoration: none;
+  color: var(--footer-text-color);
+}
+.material-symbols-outlined {
+  position: relative;
+  top: 50%;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+footer a:visited {
+  color: var(--footer-text-color-visited);
+}
+footer a:hover {
+  color: var(--footer-text-color-hover);
+}

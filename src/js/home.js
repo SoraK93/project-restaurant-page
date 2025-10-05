@@ -1,7 +1,9 @@
+import "../css/home.css";
 import topViewRamen from "../assets/top-view-ramen-bowls.jpg";
 
 const pageContent = {
   shop: {
+    heading: "About Us",
     description: `Our ramen shop is a culinary destination dedicated to the art of
         ramen, serving Japanese noodle soup with a focus on authentic,
         flavorful broth, springy noodles, and fresh, carefully selected
@@ -35,6 +37,10 @@ const shopDescription = document.createElement("div");
 shopDescription.classList.add("shop-description");
 home.appendChild(shopDescription);
 
+const headingShopDescription = document.createElement("h1");
+headingShopDescription.textContent = pageContent.shop.heading;
+shopDescription.appendChild(headingShopDescription);
+
 const paraShopDescription = document.createElement("p");
 paraShopDescription.textContent = pageContent.shop.description;
 shopDescription.appendChild(paraShopDescription);
@@ -63,5 +69,4 @@ imgDishDescription.setAttribute("src", pageContent.dish.img);
 imgDishDescription.setAttribute("aria-hidden", "true");
 containerDishDescription2.appendChild(imgDishDescription);
 
-const content = document.querySelector("#content");
-content.appendChild(home);
+export default home;

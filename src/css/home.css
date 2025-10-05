@@ -1,6 +1,6 @@
 /* Home */
 .home > div {
-  margin: 5em;
+  margin: 5em 15em;
 }
 
 .shop-description {
@@ -17,9 +17,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.dish-description div:nth-child(1) h1 {
-  font-size: 5rem;
-  padding: 0.5em;
+.dish-description div:nth-child(1) {
+  padding: 5em;
 }
 .dish-description div:nth-child(2) img {
   width: 100%;
@@ -39,10 +38,15 @@
   width: 100%;
   height: 100%;
 }
-.shop-description div:nth-child(1) p,
+.shop-description h1,
+.dish-description div:nth-child(1) h1 {
+  font-size: 5rem;
+  padding: 0.5em 0;
+}
+.shop-description p,
 .dish-description div:nth-child(1) p {
   font-size: 3rem;
   font-weight: 500;
   text-align: justify;
-  padding: 0.5em;
+  padding: 0.5em 0;
 }
